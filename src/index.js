@@ -129,6 +129,13 @@ class Board extends React.Component {
                 </svg>
             </h2>
           </div>
+        ) : (winner === "It's a Tie") ? (
+          <h2 className="winner">{winner}<svg height="50" width="50">
+                  <circle cx="30" cy="30" r="20" stroke="none" fill='red'/>
+                </svg>
+                <svg height="50" width="50">
+                  <circle cx="30" cy="30" r="20" stroke="none" fill='yellow'/>
+                </svg></h2>
         ) : (
           <h2 className="winner">The winner is {winner}<svg height="50" width="50">
                   <circle cx="30" cy="30" r="20" stroke="none" fill={winner === 'red' ? "red" : "yellow"}/>
@@ -175,8 +182,20 @@ function checkWinner(board) {
     checkVertical(board) ||
     checkDiagonalRight(board) ||
     checkDiagonalLeft(board) ||
-    checkHorizontal(board)
+    checkHorizontal(board) ||
+    checkTie(board)
   );
+}
+
+function checkTie(board) {
+  for (let r = 0; r < 7; r++) {
+    for (let c = 0; c < 6; c++) {
+      if(!board[r][c]) {
+        return false;
+      }
+    }
+  }
+  return "It's a Tie";
 }
 
 function checkVertical(board) {
