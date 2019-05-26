@@ -1,0 +1,103 @@
+.body {
+  text-align: center;
+}
+.game-board {
+  display: flex;
+  margin-top: 50px;
+  flex-direction: inline;
+  flex-wrap: nowrap;
+  min-width: 400px;
+  max-width: 564px;
+  min-height: 400px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #DEE9FC;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.board-row {
+  width: 80px;
+  display: table-column;
+}
+
+h1 {
+  color: #DEE9FC;
+}
+
+.status {
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #DEE9FC;
+  justify-content: center;
+  margin-right: auto;
+  float: center;
+}
+
+.winner {
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #DEE9FC;
+  justify-content: center;
+  margin-right: auto;
+  float: center;
+  font-size: x-large;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+}
+
+.coin-spot {
+  border: 2px solid #6395F2;
+  border-radius: 10px;
+  height: 80px;
+  width: 80px;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.coin-spot:focus {
+  outline: none;
+}
+
+.red {
+  height: 50px;
+  width: 50px;
+  background-color:red;
+  border-radius: 70px;
+}
+
+.yellow {
+  height: 50px;
+  width: 50px;
+  background-color: yellow;
+  border-radius: 100px;
+}
+
+.white {
+  background-color: #F7DAD4;
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+}
+
+.game {
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #091834;
+  z-index: 10;
+}
+.game-board {
+  margin-bottom: auto;
+}
+.reset-btn {
+  margin: auto;
+}
