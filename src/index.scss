@@ -6,20 +6,27 @@
   margin-top: 50px;
   flex-direction: inline;
   flex-wrap: nowrap;
-  min-width: 400px;
-  max-width: 564px;
-  min-height: 400px;
+  min-width: 200px;
+  min-height: 335px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   background-color: #DEE9FC;
   justify-content: center;
   border-radius: 10px;
+  @media screen and (min-width: 1000px) {
+    width: 564px;
+    
+  }
 }
 
 .board-row {
-  width: 80px;
+  width: 14%;
   display: table-column;
+  @media screen and (min-height: 768px) {
+    width:80px;
+    height:80px;
+  }
 }
 
 h1 {
@@ -45,19 +52,13 @@ h1 {
   font-size: x-large;
 }
 
-.icon {
-  width: 40px;
-  height: 40px;
-  background-color: transparent;
-}
-
 .coin-spot {
   border: 2px solid #6395F2;
   border-radius: 10px;
-  height: 80px;
-  width: 80px;
+  
+  width: 100%;
   justify-content: center;
-  padding-top: 20px;
+  
 }
 
 .coin-spot:focus {
