@@ -3,7 +3,7 @@
 }
 .game-board {
   display: flex;
-  margin-top: 30px;
+  margin-top: 10px;
   flex-direction: inline;
   flex-wrap: nowrap;
   
@@ -53,7 +53,7 @@ h1 {
 .coin-spot {
   border: 2px solid #6395F2;
   border-radius: 10px;
-  height: 4em;
+  height: 3em;
   width: 100%;
   justify-content: center;
   
@@ -93,6 +93,7 @@ h1 {
   top: 0;
   background: #091834;
   z-index: 10;
+  padding-bottom: 2em;
 }
 .game-board {
   margin-bottom: auto;
